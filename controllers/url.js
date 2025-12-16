@@ -1,6 +1,6 @@
 const URL = require('../models/url');
 const ImageURL = require('../models/image');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken');
 const secret = 'SuperSoup'
 
