@@ -24,7 +24,10 @@ connectToMongoDB(process.env.MONGO_URL)
     .then(() => console.log('Database Connected'))
     .catch((error) => console.log('Database Connection Failed:', error));
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://car-manager-six.vercel.app',
+    credentials: true
+}));
 app.use(express.json());
 
 //JWT
